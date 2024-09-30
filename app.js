@@ -3,16 +3,16 @@ const express = require('express');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 require('dotenv').config();
 const cors=require('cors')
-
 const app = express();
-const port = process.env.PORT || 10211;
-
-app.use(express.json()); // to parse JSON request body
 app.use(cors({
   origin: '*', // Allows requests from any origin
   methods: ['GET', 'POST'], // Specify allowed methods
   credentials: false // Disable credentials (e.g., cookies, authorization headers) for security purposes
 })) // Enable pre-flight requests for all routes
+const port = process.env.PORT || 10211;
+
+app.use(express.json()); // to parse JSON request body
+
 
 app.use(express.urlencoded({extended:true}))
 
