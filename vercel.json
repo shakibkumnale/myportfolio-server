@@ -10,23 +10,23 @@
       "use": "@vercel/static"
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)", 
-      "dest": "/app.js"
+      "source": "/(.*)", 
+      "destination": "/app.js"
     },
     {
-      "src": "/api/(.*)", 
-      "dest": "/index.html"
+      "source": "/api/(.*)", 
+      "destination": "/index.html"
     }
   ],
   "headers": [
     {
-      "source": "/(.*)", 
+      "source": "/(.*)",  
       "headers": [
         {
           "key": "Access-Control-Allow-Origin",
-          "value": "*"
+          "value": "*"  
         },
         {
           "key": "Access-Control-Allow-Methods",
