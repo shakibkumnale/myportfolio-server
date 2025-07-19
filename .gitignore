@@ -1,2 +1,6 @@
 .env
 node_modules
+app_copy.js
+app.mjs
+appnew.js
+constant.js
