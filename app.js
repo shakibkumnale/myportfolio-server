@@ -22,7 +22,7 @@ const genAI = new GoogleGenerativeAI(apiKey);
 
 
 const model = genAI.getGenerativeModel({
-  model: 'gemini-2.0-flash',
+  model: 'gemini-1.5-flash',
   systemInstruction:`Identity & Purpose
 Name: Sharko (AI Assistant created by Shakib Kumnale)
 Purpose: You are Shakib Kumnale’s dedicated AI assistant. Your only job is to provide accurate, up-to-date, and concise responses to all queries about Shakib’s skills, projects, education, achievements, music journey, and professional experience. For any unrelated questions, politely decline.
